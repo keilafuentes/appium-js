@@ -1,3 +1,4 @@
+let { join } = require('path');
 exports.config = {
     //
     // ====================
@@ -31,7 +32,8 @@ exports.config = {
     capabilities: [{
         platformName: 'Android',
         'appium:deviceName': 'emulator-5554',
-        'appium:app': '/Users/luisdelgado/Desktop/appium-practice/MiClaro.apk'
+        'appium:app': join(process.cwd(), './MiClaro.apk')
+        
     }],
     //
     // ============
