@@ -24,14 +24,18 @@ exports.config = {
     //
     specs: [
         './test/specs/**/*.js'
+        
     ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
+        
     ],
     capabilities: [{
         platformName: 'Android',
         'appium:deviceName': 'emulator-5554',
+        'appium:appWaitActivity': '*',
+        'appium:dontStopAppOnReset':true,
         'appium:app': join(process.cwd(), './MiClaro.apk')
         
     }],
@@ -106,6 +110,7 @@ exports.config = {
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
+    
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
