@@ -9,5 +9,10 @@ class Login {
       '//android.widget.EditText[@resource-id="com.clarord.miclaro:id/password_view"]'
     );
   }
+  get loginBtn() {
+    return $(
+      '//android.widget.Button[@resource-id="com.clarord.miclaro:id/full_login_button"]'
+    );
+  }
 }
 module.exports = new Login();
