@@ -1,8 +1,8 @@
-const dialog= require('../../page/welcome.page');
+const dialog = require("../../page/welcome.page");
 
-describe('welcomeDialog', () => {
-    it('closeTips', async () => { 
-        await dialog.nextBtn.click();
-        await dialog.closeBtn.click();
-    })
-})
+describe("welcomeDialog", () => {
+  it("closeTips", async () => {
+    await dialog.nextBtn.click();
+    await dialog.closeBtn.click();
+  });
+});
