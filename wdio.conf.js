@@ -37,10 +37,9 @@ exports.config = {
       "appium:dontStopAppOnReset": true,
       "appium:noReset": true,
       "appium:app": androidAppPath,
-      //"appium:systemPort": "8201",
     },
   ],
-  //
+  ////"appium:systemPort": "8201",
   // ============
   // Capabilities
   // ============
