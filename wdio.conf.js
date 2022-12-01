@@ -1,4 +1,5 @@
-let { join } = require("path");
+const projectPath = require("path");
+const androidAppPath = projectPath.join(process.cwd(), "./app/MiClaro.apk");
 exports.config = {
   //
   // ====================
@@ -31,9 +32,12 @@ exports.config = {
     {
       platformName: "Android",
       "appium:deviceName": "emulator-5554",
+      "appium:automationName": "UIAutomator2",
       "appium:appWaitActivity": "*",
       "appium:dontStopAppOnReset": true,
-      "appium:app": join(process.cwd(), "./MiClaro.apk"),
+      "appium:noReset": true,
+      "appium:app": androidAppPath,
+      //"appium:systemPort": "8201",
     },
   ],
   //
